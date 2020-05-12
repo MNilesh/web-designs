@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+
+*{
+    margin: 0;padding: 0;
+  box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#navbar{
+  position: absolute;
+  top: 0;left: 0;width: 100%;height: 100px;
+  display: flex;
+}
+
+#logo{
+  width: 50%;
+  padding-left: 10%;
+  display: flex;
+/*   justify-content: flex-end; */
+}
+
+#menu{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+#menu ul{
+  list-style:none;width: 300px;
+  height: 100%;
+  display: flex;
+}
+
+#menu li{
+  line-height: 100px;
+  width: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size:11px;
+  transition: all .5s;
+  transform: translateX(-30px);
+  opacity:0;
+}
+
+#menu li:nth-child(1){
+  transition-delay: 0.2s;
+}
+
+#menu li:nth-child(2){
+   transition-delay: 0.6s;
+}
+#menu li:nth-child(3){
+   transition-delay: 1s;
+}
+
+#logo h1{
+  text-transform: uppercase;line-height: 100px;
+  
+}
+
+#img_bg{
+  width: 0%;
+  height: 83%;
+  background: #02be54;
+  position: absolute; right: 0;bottom: 0;
+  
+}
+
+
+@keyframes rtol{
+  0%{
+width: 0%;
+  bottom: 0;  
+  }
+  50% {
+    width: 70%;
+    bottom: 0px ;
+  }
+  100%{width: 70%;
+    bottom: 100px ;
+    z-index: -1 ;
+  }
+}
+
+img{
+  width: 400px;
+/*   height: 0; */
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  transition: all .6s cubic-bezier(.09,.73,.91,.79);
+  transition-delay:0.7s;
+  transform:translateY(100%); 
+}
+
+
+#content{
+  position: absolute;left: 15%;
+  top: 25%;
+  width: 40%;
+  
+}
+
+#content h1{
+  text-transform: uppercase;
+  transition: all 1.2s; 
+  opacity:0; transform:translateX(-100px);
+  transition-delay:0.81s; 
+}
+
+#content p
+{
+  transition: all 1.2s; 
+  opacity:0; transform:translateX(-100px);
+  transition-delay:0.91s;
+}
+
+#item1{
+    width: 45%;
+  height: 200px;
+  background-image: url('https://www.telegraph.co.uk/content/dam/fashion/2019/11/26/LKB_AW19_AUGUST_10_trans%2B%2BXxNHKgVzGLlMTFfSc8ogRjgvSsGPs1UGfa2r2ifahVI.jpg');
+  background-size: cover;
+  background-position: center 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: all .3s;
+  transform: translateY(100%);
+}
+
+
+#item2{
+    width: 45%;
+  height: 200px;
+  background-image: url('https://planetfashion.imgix.net/resources/img/planet_fashion/PF_D_S2_aboutUs.jpg?auto=format');
+  background-size: cover;
+  background-position: center 0;
+  position: absolute;
+  right: 45%;
+  bottom: 0;
+  
+   transition: all .3s;
+  transform: translateY(100%);  
+}
+
+button{
+  position: absolute;right: 0; 
+  bottom: 200px;width: 200px;
+  height: 40px;;outline:none;
+  background-color: #333;
+  color:#fff;
+  border:none;z-index: 2;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  font-size: 10px;
+  transform:translateX(100%);
+  transition: all .7s;
+  transition-delay: 0.9s;
+}

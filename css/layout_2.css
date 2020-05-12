@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+.container{
+  height: 100vh;
+  display:grid;
+  grid-template-columns: 120px 80px 1fr 1fr 180px;
+  grid-template-rows: 80px auto 16px 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vertical{
+  position: absolute;
+   transform: rotate(-90deg);
+    height: 52px;
+    width: 500px;
+}
+.vertical h5{
+  margin: 0;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing:2px;
+  position: relative;
+}
+
+.menu{
+
+  position: relative;
+  height:100px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.menu span{
+  display: inline-block;
+  width:40px;
+  height:1px;
+  background-color: #fff;
+  position: relative;
+  top:20%;
+/*   position: absolute;
+  top: 20%;
+  left: 50%;
+  transform:translateX(-50%); */
+}
+.menu span:nth-child(1)
+{
+  top:40%;
+}
+
+.menu span:nth-child(2)
+{
+  top:30%;
+}
+
+.logo{
+  grid-row: 2/1;
+  grid-column: 3 / span 1;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.right__side{
+  grid-column: 5/ -1;
+  grid-row: 1 / -1;
+  background-color: rgb(44,45,50);
+/*   position: relative; */
+}
+
+.brown{
+  grid-column: 4/ span 1;
+  grid-row:1/-1;
+  background-color: #c1bab4;
+}
+
+.banner{
+  grid-column: 3/ span 2;
+  grid-row: 2/span 2;
+}
+
+.banner img{
+  max-height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+.cta{
+  grid-row:3/ span 1;
+  grid-column: 2/span 1;
+}
+.cta button{
+   width:220px;
+  text-transform: uppercase;
+  padding: 12px 5px;
+  font-size:9px;
+  letter-spacing:3px;
+  background-color: #333;
+  border:none;
+  color:#fff;
+  font-weight: 600;
+}
+
+.vertical__1{
+position: absolute;
+    width: 100%;
+    text-align: left;
+    transform: rotate(-90deg);
+    left: -44%;
+    top: -9%;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.vertical__2{
+      position: absolute;
+    transform: rotate(-90deg);
+    height: 34px;
+    width: 21%;
+    width: 46%;
+    right: -15%;
+    bottom: 53%;
+    z-index: 44;
+    text-align: left;
+    line-height: 3.5;
+}
+
+.vertical__2 h5::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    top: 45%;
+    left: -22%;
+}
+
+.vertical__1 h5::before{
+    position: absolute;
+    content: '';
+    top: 35%;
+    width: 165px;
+    height: 2px;
+    background: #333;
+    left: -16%;
+  } 
